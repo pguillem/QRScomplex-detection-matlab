@@ -1,14 +1,15 @@
-% LABORATORIO DE TRANSFORMADA DE FOURIER 
-% Luisa Fernand Echeverry Gómez
+% LABORATORIO DE TRANSFORMADA DE FOURIER
+% 
 % Pero Guillem
-% Diana Nuñez
+% Luisa Fernand Echeverry GÃ³mez 
+% Diana NuÃ±ez
 % Angela Ardila
 clc, clear , close all
 delete(instrfind({'Port'},{'COM3'})); %%creando puerto serial  
 
 
-%% Punto 1. Caracterización e identificación de
-%señales mezacladas. 
+%% Punto 1. CaracterizaciÃ³n e identificaciÃ³n de
+%seÃ±ales mezacladas. 
 % 1.1 Leer archivo .txt 
 A= textread ('signal.txt');
 A = A';
@@ -20,9 +21,9 @@ tiempo = deltaMuestra*tiempo;% Vector de tiempos final
 
 
 subplot(2,4,1);
-ylabel('Voltaje de señal [mV]');
+ylabel('Voltaje de seÃ±al [mV]');
 xlabel('Tiempo [ms]');
-title ('Señal');
+title ('SeÃ±al');
 plot(A);
 
 
